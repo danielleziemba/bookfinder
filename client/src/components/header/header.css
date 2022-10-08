@@ -33,3 +33,32 @@
 .header-subtitle{
     font-family: 'Montserrat', sans-serif;
 }
+
+.headlines {
+    width: 100%;
+    color: #FAF9F9;
+}
+
+.headline-title{
+    width: fit-content;
+    height: 40px;
+    background-color: black;
+    color: #FAF9F9;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    padding: 2px 10px;
+}
+
+.headline-content{
+    background-color: #D65F2B;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
