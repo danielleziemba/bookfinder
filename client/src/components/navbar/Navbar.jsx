@@ -2,8 +2,20 @@ import "./navbar.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import logo from "../../assets/logo-small.png"
+import { useEffect, useState } from "react";
+import Searchbar from "../searchbar/Searchbar";
 
 const Navbar = () => {
+    const [showing, setShowing] = useState(false);
+
+    const handleOpen = () => {
+        setShowing(true);
+    }
+
+    const handleClose = () => {
+        setShowing(false);
+    } 
+
   return (
     <div className="main-nav">
         <div className="button-logo">
@@ -22,9 +34,15 @@ const Navbar = () => {
 
         <div className="nav-content-right">
             <div className="search-button nav-corner-box nav-corner-right">
-                <FontAwesomeIcon icon={faMagnifyingGlass} className="header-icon" />
+                <FontAwesomeIcon 
+                    icon={faMagnifyingGlass} 
+                    className="header-icon" 
+                    onClick={handleOpen}
+                />
             </div>
         </div>
+
+        <Searchbar showing={showing} handleClose={handleClose} />
 
         <div className="genre-nav">
             <ul className="menu-masthead-1">

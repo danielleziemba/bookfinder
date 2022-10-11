@@ -1,0 +1,92 @@
+/*PUT THIS IN MAIN */
+
+
+/** FEATURED CONTENT **/
+
+.featured-content{
+    order: 2;
+    flex: 1;
+    position: relative;
+}
+
+.featured-content::before {
+    left: -20px;
+    right: inherit;
+}
+
+.featured-content::before,
+.featured-content::after {
+    position: absolute;
+    top: 0;
+    right: -20px;
+    content: "";
+    height: 83%;
+    border-left: 1px solid #000;
+} 
+
+.featured-content::after {
+    display: none;
+}
+
+/* featured post */
+
+.featured-content .featured-post {
+    position: relative;
+}
+
+.featured-post {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 30px;
+}
+
+.featured-content img {
+    width: 100%;
+    height: auto;
+}
+
+.featured-content .featured-post .post-details {
+    margin-left: 10px;
+}
+
+.recent-content a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.author-name {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #5A6E61;
+    font-weight: 700;
+}
+
+/* culturally relevant */
+
+.culturally-relevant {
+    display: flex;
+}
+
+.culturally-relevant .curated-post {
+    flex: 0 0 47%;
+}
+
+.culturally-relevant .curated-post .thumb-wrap {
+    max-height: 180px;
+}
+
+.culturally-relevant .curated-post img {
+    max-width: 100%;
+}
+
+featured-content img {
+    width: 100%;
+    height: auto;
+}
+
+.culturally-relevant .curated-post:last-child {
+    margin-left: 30px;
+}

@@ -1,0 +1,171 @@
+h1, h2, h3 {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 6px 0 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+h2, h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    line-height: 1.4rem;
+}
+
+.column {
+    font-size: 1.5rem;
+    margin: 0 20px;
+    line-height: 1;
+}
+
+.main-container {
+    margin-top: 20px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/**optional**/
+.featured-content img {
+    object-fit: cover;
+    max-height: 400px;
+    object-position: bottom;
+}    
+
+/* SIDEBAR */
+
+.curated-posts {
+    order: 1;
+    flex: 0 0 260px;
+    position: relative;
+}
+
+.curated-posts .curated-post:not(:last-child):after {
+    content: " ";
+    border-bottom: 1px solid #000;
+    position: absolute;
+    width: 220px;
+    left: 20px;
+    bottom: -20px;
+}
+
+.recent-posts-inner:before {
+    top: -20px;
+}
+
+.recent-posts-inner:before,
+.recent-posts-inner:after {
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid #000;
+    left: 0;
+    right: 0;
+}
+
+.recent-posts-inner:after {
+    bottom: 142px!important;
+}
+
+/** RECENT POSTS **/
+
+.recent-posts {
+    order: 3;
+    flex-basis: 100%;
+}
+
+/** READ MORE **/
+
+.recent-content .read-more {
+    background: #000;
+    display: block;
+    color: #fff;
+    font-size: 1.1rem;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+.recent-content  .read-more:hover {
+    background-color: #D65F2B;
+    color: #000
+}
+
+/** MIDDLE **/
+.full-responsive {
+    max-width: 1600px;
+    margin: 30px auto 0;
+    text-align: center;
+}
+
+/** PODCASTS **/
+
+.podcasts {
+    background: #FAEEED;
+    padding: 50px 0 10px;
+    margin-bottom: 30px;
+}
+
+.podcasts .section-heading {
+    text-align: center;
+    margin: 40px auto 80px;
+    position: relative;
+    max-width: 380px;
+}
+
+.podcasts .section-heading h2 {
+    z-index: 2;
+    position: relative;
+}
+
+.podcasts .section-heading a {
+    font-family: 'Bebas Neue', sans-serif;
+    text-decoration: none;
+    font-size: 4rem;
+    line-height: 5rem;
+}
+
+.podcasts .section-heading .header-background {
+    position: absolute;
+    background-color: #D65F2B;
+    opacity: 0.5;
+    width: 340px;
+    height: 160px;
+    top: -40px;
+    left: 0;
+    z-index: 0;
+}
+
+.podcasts .podcast-panels {
+    padding: 0 20px;
+}
+
+.podcasts a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.view-all {
+    background: #D65F2B;
+    display: block;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 10px 0;
+    max-width: 350px;
+    margin: 0 auto 30px;
+}
+
+.view-all:hover {
+    background: #000;
+    color:#fff;
+}

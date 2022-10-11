@@ -1,0 +1,16 @@
+/** FOOTER **/
+
+#footer {
+    background: #000;
+    text-align: center;
+    padding: 15px;
+    clear: both;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+#footer .rnmg-logo {
+    background-color: #D65F2B;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 15px;
+}

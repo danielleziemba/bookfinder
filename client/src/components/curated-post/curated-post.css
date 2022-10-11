@@ -1,0 +1,20 @@
+.curated-post {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.curated-post .thumb-wrap {
+    max-height: 140px;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.curated-post img {
+    max-width: 260px;
+    width: 100%;
+    height: auto;
+}
+
+.curated-post:last-child {
+    margin-bottom: 0;
+}
