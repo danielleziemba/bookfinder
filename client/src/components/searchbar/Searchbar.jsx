@@ -1,12 +1,14 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
 import "./searchbar.css"
+import { SearchContext } from "../../context/search-context";
 
 const Searchbar = (props) => {
-    const [searchData, setSearchData] = useState("");
+    const [searchQuery, setSearchQuery] = useState("");
+    const searchContext = useContext(SearchContext);
 
-    const handleChange = (e) => {
-        setSearchData(e.target.value)
-    }
+    const searchQueryHandler = () => {
+        searchContext.searchHandler(searchQuery);
+    };
 
   return (
     <div 
@@ -19,14 +21,16 @@ const Searchbar = (props) => {
                 role="search"
                 id="searchform"
                 className="searchform"
+                onSubmit={searchQueryHandler}
             >
                 <div className="controls">
                     <input 
+                        placeholder="Search"
                         type="text" 
-                        value={searchData}
                         name="s"
                         id="s"
-                        onChange={handleChange}
+                        value={searchQuery}
+                        onChange={(e) => setSearchQuery(e.target.value)}
                     />
                     <input 
                         type="submit" 
